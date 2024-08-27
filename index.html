@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Encriptador y Desencriptador de Texto</h1>
+            <input id="inputText" placeholder="Ingrese el texto aquí" oninput="validarTexto()" />
+            <p id="warning" style="color: red; display: none;">Solo se permiten letras minúsculas y sin caracteres especiales.</p>
+            <div class="buttons">
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="right-section">
+            <img id="placeholderImage" src="img/1.png" alt="Imagen Placeholder" style="display: block;">
+            <textarea id="outputText" placeholder="Resultado..." readonly style="display: none;"></textarea>
+            <button id="copyButton" onclick="copiarAlPortapapeles()" style="display: none;">Copiar</button>
+        </div>
+    </div>
+    <footer>
+        Desarrollado por Luis Lamorte
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
